@@ -3,8 +3,8 @@ import java.util.HashMap;
 public class BruteForce {
 
     public static String breakCipher(String message) {
-        int space = Constans.ALPHABET.indexOf(' ');
-        int shift = space - Constans.ALPHABET.indexOf((char) searchRecurringSymbol(message));
+        int space = Constants.ALPHABET.indexOf(' ');
+        int shift = space - Constants.ALPHABET.indexOf((char) searchRecurringSymbol(message));
         return Cipher.cipher(message, shift);
     }
 
